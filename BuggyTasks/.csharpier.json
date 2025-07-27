@@ -1,0 +1,6 @@
+{
+  : https://raw.githubusercontent.com/belav/csharpier/main/schema/csharpier.schema.json,
+  indent_size: 4,
+  print_width: 120
+}
+
