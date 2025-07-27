@@ -6,8 +6,9 @@ namespace BuggyTasks.ViewModels;
 
 public partial class NewTaskViewModel : ObservableObject
 {
+
     [ObservableProperty]
-    string newTaskTitle;
+    private string newTaskTitle = string.Empty;
 
     public ICommand AddNewTaskCommand { get; }
 
