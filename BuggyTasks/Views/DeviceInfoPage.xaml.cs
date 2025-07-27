@@ -1,14 +1,17 @@
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Devices;
 
-namespace BuggyTasks.Views;
-
-public partial class DeviceInfoPage : ContentPage
+namespace BuggyTasks.Views
 {
-    public DeviceInfoPage()
+    public partial class DeviceInfoPage : ContentPage
     {
-        InitializeComponent();
-        var model = DeviceInfo.Model;
-        var platform = DeviceInfo.Platform.ToString();
+        public DeviceInfoPage()
+        {
+            InitializeComponent();
+
+            // Set label texts with device info
+            modelLabel.Text = $"Model: {DeviceInfo.Model}";
+            platformLabel.Text = $"Platform: {DeviceInfo.Platform}";
+        }
     }
 }

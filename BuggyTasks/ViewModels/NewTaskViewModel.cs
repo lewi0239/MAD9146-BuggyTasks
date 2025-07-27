@@ -9,7 +9,7 @@ public partial class NewTaskViewModel : ObservableObject
     [ObservableProperty]
     string newTaskTitle;
 
-    public ICommand AddNewTaskCommand { get; } 
+    public ICommand AddNewTaskCommand { get; }
 
     public NewTaskViewModel()
     {
@@ -18,7 +18,10 @@ public partial class NewTaskViewModel : ObservableObject
 
     void OnAddTask()
     {
+        TaskListViewModel.Instance.AddTask(NewTaskTitle);
         // Simulate adding a task
         Console.WriteLine($"Added task: {NewTaskTitle}");
+        NewTaskTitle = string.Empty;
+
     }
 }
