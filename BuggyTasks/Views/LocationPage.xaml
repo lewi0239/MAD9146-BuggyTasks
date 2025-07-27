@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage Title="Location" x:Class="BuggyTasks.Views.LocationPage" xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-  <VerticalStackLayout Padding="20" Spacing="20">
+  <VerticalStackLayout Padding="24" Spacing="24">
     <Label FontSize="24" HorizontalOptions="Center" Text="Location Page"></Label>
-    <Button Clicked="OnGetLocationClicked" Text="Get Current Location"></Button>
+    <Button Clicked="OnGetLocation" Text="Get Current Location"/>
     <Label FontSize="18" HorizontalOptions="Center" x:Name="locationLabel"></Label>
   </VerticalStackLayout>
 </ContentPage>

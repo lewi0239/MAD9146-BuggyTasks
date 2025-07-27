@@ -2,13 +2,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:BuggyTasks.ViewModels"
              x:Class="BuggyTasks.Views.NewTaskPage"
+             x:DataType="vm:NewTaskViewModel"
              Title="Add Task">
 
     <ContentPage.BindingContext>
         <vm:NewTaskViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Padding="16" Spacing="10">
+    <VerticalStackLayout Padding="18" Spacing="20" Margin="16">
         <Entry Placeholder="Enter task" Text="{Binding NewTaskTitle}" />
         <Button Text="Add Task" Command="{Binding AddTaskCommand}" />
     </VerticalStackLayout>

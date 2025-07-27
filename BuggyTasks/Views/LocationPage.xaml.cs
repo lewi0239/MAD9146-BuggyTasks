@@ -12,7 +12,8 @@ namespace BuggyTasks.Views
             InitializeComponent();
         }
 
-        async void OnGetLocationClicked(object sender, EventArgs e)
+        async void OnGetLocation(object sender, EventArgs e)
+
         {
             try
             {
